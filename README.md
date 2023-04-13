@@ -43,7 +43,7 @@ Data is saved automatically to the basket by default, but you can explicitly set
 to commit your changes to the basket.
 
 ## Installation
-TBA
+Install Darcy from the [NuGet repository](https://www.nuget.org/packages/Darcy/).
 
 ## FAQ
 
