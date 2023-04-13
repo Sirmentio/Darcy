@@ -1,4 +1,6 @@
 # Darcy
+[![Build status](https://ci.appveyor.com/api/projects/status/40phvmr43qttw3fu?svg=true)](https://ci.appveyor.com/project/Sirmentio/darcy)
+
 Darcy is a synchronous, single file YAML based database library targeting .NET 7 and up. Darcy is dead simple, only depending
 on [YamlDotNet](https://github.com/aaubry/YamlDotNet) for what it does.
 
