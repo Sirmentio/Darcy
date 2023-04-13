@@ -81,5 +81,14 @@ namespace Darcy
 			return entry;
 		}
 
+		/// <summary>
+		/// Removes a specified key from the Basket
+		/// </summary>
+		/// <param name="key"></param>
+		public void RemoveKey(object key)
+		{
+			_entries.Remove(key);
+		}
+
 	}
 }
