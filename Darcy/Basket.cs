@@ -60,6 +60,7 @@ namespace Darcy
 			File.WriteAllText(_filePath, yaml);
 			return new FileInfo(_filePath);
 		}
+
 		/// <summary>
 		///		Gets the key corresponding to the ExpandoObject, and if it doesn't already exist, creates a new empty one.
 		/// </summary>
@@ -79,6 +80,17 @@ namespace Darcy
 
 			_entries[key] = entry;
 			return entry;
+		}
+
+		/// <summary>
+		/// Checks to see if a property exists in a given key.
+		/// </summary>
+		/// <param name="key"></param>
+		/// <param name="name"></param>
+		/// <returns></returns>
+		public bool PropertyExists(ExpandoObject key, string name)
+		{
+			return ((IDictionary<string, object>)key).ContainsKey(name);
 		}
 
 		/// <summary>

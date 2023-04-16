@@ -18,8 +18,9 @@ namespace DarcyDemo
 			user.birthdate = DateTime.Parse("06-10-1960");
 			user.age = null;
 			user.chance_of_spontaneous_combustion = 0.0000000000000001f;
-			Console.WriteLine($"Name: {user.name}. Gender: {user.gender}, birthdate: {user.birthdate}");
-			
+			user.favcolor = Users.PropertyExists(user, "favcolor") ? user.favcolor : "red";
+
+			Console.WriteLine($"Name: {user.name}. Gender: {user.gender}, birthdate: {user.birthdate}. Her favorite color is {user.favcolor}");
 		}
 	}
 }
