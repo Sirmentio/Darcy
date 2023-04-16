@@ -15,7 +15,7 @@
     <RepositoryUrl>https://github.com/Sirmentio/Darcy</RepositoryUrl>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <AssemblyVersion>1.0.$([System.DateTime]::UtcNow.ToString(mmff))</AssemblyVersion>
+    <AssemblyVersion>1.1.$([System.DateTime]::UtcNow.ToString(mmff))</AssemblyVersion>
     <Version>$(AssemblyVersion)</Version>
   </PropertyGroup>
 
